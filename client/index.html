@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess-Like Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Turn-Based Chess-Like Game</h1>
+    <div id="game-board"></div>
+    <div id="move-controls">
+        <button id="start-game">Start Game</button>
+        <button id="end-turn">End Turn</button>
+    </div>
+    <div id="hero3-moves" style="display: none;">
+        <button onclick="sendMove('H3:FL')">FL</button>
+        <button onclick="sendMove('H3:FR')">FR</button>
+        <button onclick="sendMove('H3:BL')">BL</button>
+        <button onclick="sendMove('H3:BR')">BR</button>
+        <button onclick="sendMove('H3:RF')">RF</button>
+        <button onclick="sendMove('H3:RB')">RB</button>
+        <button onclick="sendMove('H3:LF')">LF</button>
+        <button onclick="sendMove('H3:LB')">LB</button>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

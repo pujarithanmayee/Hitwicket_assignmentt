@@ -1,0 +1,78 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    margin: 20px 0;
+    color: #333;
+}
+
+/* Game Board Styling */
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-template-rows: repeat(5, 60px);
+    gap: 2px;
+    border: 2px solid #000;
+    margin-bottom: 20px;
+    background-color: #ddd;
+}
+
+#game-board div {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#game-board div:hover {
+    background-color: #e0e0e0;
+}
+
+#game-board div:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Move Controls Styling */
+#move-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
